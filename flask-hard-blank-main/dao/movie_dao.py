@@ -46,7 +46,7 @@ class MovieDAO:
 
 	def delete(self, mid):
 		"""Удалить фильм"""
-		movie = self.session.query(Movie).get(mid)
+		movie = self.get_one(mid)
 
 		self.session.delete(movie)
 		self.session.commit()

@@ -6,7 +6,7 @@ from container import movie_service
 
 movies_ns = Namespace('movies')
 
-movie_schema = MovieSchema
+movie_schema = MovieSchema()
 movies_schema = MovieSchema(many=True)
 
 
